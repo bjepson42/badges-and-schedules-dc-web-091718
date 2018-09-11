@@ -28,8 +28,8 @@ def printer(attendees)
   puts foo
 end
   rooms2.each do |bar|
-    puts bar 
+    puts bar
   end
-  
+
   end
 end
