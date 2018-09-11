@@ -10,6 +10,7 @@ def batch_badge_creator(attendees)
   attendees.each do |foo|
   badges.push badge_maker(attendees(foo))
   end
+  pry.break
   return badges
 end
 
