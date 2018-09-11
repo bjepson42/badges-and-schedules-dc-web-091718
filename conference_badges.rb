@@ -8,7 +8,7 @@ end
 def batch_badge_creator(attendees)
   badges = []
   attendees.each do |foo|
-  badges = badge(attendees(foo))
+  badges = badge_maker(attendees(foo))
   end
   return badges
 end
@@ -22,8 +22,6 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  i = 0
-  while i < attendees.length
   puts batch_badge_creator(attendees)
   puts assign_rooms(attendees)
 end
